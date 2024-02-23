@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1 id="ans"></h1>
+
+    <label for="">Enter Password</label>
+    <input type="text" name="" id="in">
+</body>
+</html>
+
+<script>
+
+    let stpwd ="123@jaibharat"
+
+    let cpw=document.getElementById("in").value 
+
+    if(cpw == ""){
+        alert("Enter Password")
+    }else if(stpwd === cpw){
+        alert("login!")
+    }else{
+        alert("Incorrect Password")
+    }
+        
+    
+
+</script>

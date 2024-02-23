@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="ans"></h1>
+
+    <label for="">Enter Principle amount</label>
+    <input type="text" id="in1">
+
+    <br><br><br>
+
+    <label for="">Enter Rate</label>
+    <input type="text" id="in2">
+
+    <br><br><br>
+
+    <label for="">Enter Year</label>
+    <input type="text" id="in3">
+
+    <br><br><br>
+</body>
+</html>
+
+<script>
+
+    let a=document.getElementById("in1").value
+    let b=document.getElementById("in2").value
+    let c=document.getElementById("in3").value
+
+    let int = (a*b*c)/100
+
+    document.getElementById("ans").innerHTML=int
+
+</script>

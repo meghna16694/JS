@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="ans"></h1>
+    
+
+    <label for="">Enter Food Cost</label>
+    <input type="text" id="in1">
+    <br><br><br>
+
+    <label for="">Enter Drink Cost</label>
+    <input type="text" id="in2">
+    <br><br><br>
+
+    <label for="">Enter GST</label>
+    <input type="text" id="in3">
+    <br><br><br>
+
+    <label for="">Enter SGST</label>
+    <input type="text" id="in4">
+    <br><br><br>
+
+    <label for="">Service Tax</label>
+    <input type="text" id="in5">
+    <br><br><br>
+</body>
+</html>
+
+<script>
+
+    let a=document.getElementById("in1").value 
+    let b=document.getElementById("in2").value 
+    let c=document.getElementById("in3").value 
+    let d=document.getElementById("in4").value 
+    let e=document.getElementById("in5").value 
+
+    let totalBill = +a  + +b- +c- +d-  +e
+
+    document.getElementById("ans").innerHTML=totalBill
+
+</script>

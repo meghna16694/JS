@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="ans"></h1>
+
+    <label for="">Enter Principle amount</label>
+    <input type="text" id="in1">
+
+    <br><br><br>
+
+    <label for="">Enter time</label>
+    <input type="text" id="in2">
+</body>
+</html>
+
+<script>
+
+   let p=document.getElementById("in1").value 
+   let t=document.getElementById("in2").value 
+   let int
+
+  
+
+   if(p=="" || t==""){
+    document.getElementById("ans").innerHTML="Enter Value"
+   }else{
+    if(p>=0 && p<=10000){
+        int=(p*5*t)/100
+        document.getElementById("ans").innerHTML=int
+    }else if(p>=10001 && p<=20000){
+        interest=(p * 10 * t)/100
+        document.getElementById("ans").innerHTML=interest
+    }else if(p>=20001 && p<=30000){
+        interest=(p * 15 * t)/100
+        document.getElementById("ans").innerHTML=interest
+    }else if(p>=30001 && p<=40000){
+        interest=(p * 20 * t)/100
+        document.getElementById("ans").innerHTML=interest
+   }else if(p>=100000 && p<=40000){
+        interest=(p * 25 * t)/100
+        document.getElementById("ans").innerHTML=interest
+    }
+
+}
+
+</script>

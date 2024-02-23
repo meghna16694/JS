@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <label for="">Enter A</label>
+    <input type="text" name="" id="in1">
+
+    <br><br><br>
+
+    <label for="">Enter B</label>
+    <input type="text" name="" id="in1">
+
+    <br><br><br>
+
+    <label for="">Enter C</label>
+    <input type="text" name="" id="in1">
+
+    <h1 id="ans"></h1>
+    
+</body>
+</html>
+
+<script>
+
+    let a=document.getElementById("in1").value
+
+    let b=document.getElementById("in1").value
+
+    let c=document.getElementById("in1").value
+
+    if(a=="" || b=="" || c==""){
+        document.getElementById("ans").innerHTML="Enter Valid Number"
+
+        a=parseInt(a)
+        b=parseInt(b)
+        c=parseInt(c)
+    }else{
+        if(a<b){
+            if(a<c){
+                document.getElementById("ans").innerHTML=a
+            }else{
+                document.getElementById("ans").innerHTML=c
+            }
+        }else{
+            if(b<c){
+                document.getElementById("ans").innerHTML=b
+            }else{
+                document.getElementById("ans").innerHTML=c
+            }
+        }
+    }
+    
+</script>
